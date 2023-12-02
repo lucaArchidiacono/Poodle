@@ -1,0 +1,3 @@
+[submodule "Libraries/Martin"]
+	path = Libraries/Martin
+	url = git@github.com:tigase/Martin.git
