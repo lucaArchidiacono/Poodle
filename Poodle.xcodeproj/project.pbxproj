@@ -13,6 +13,10 @@
 		5C790B992B1904F500969F6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C790B982B1904F500969F6A /* Assets.xcassets */; };
 		5C790B9C2B1904F500969F6A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C790B9B2B1904F500969F6A /* Preview Assets.xcassets */; };
 		5C790BAE2B19BCCD00969F6A /* Martin in Frameworks */ = {isa = PBXBuildFile; productRef = 5C790BAD2B19BCCD00969F6A /* Martin */; };
+		5CDB08092B1B43F900B2B2A0 /* XMPPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDB08082B1B43F900B2B2A0 /* XMPPService.swift */; };
+		5CEA75162B1B8D3300065E1C /* Logger+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEA75152B1B8D3300065E1C /* Logger+.swift */; };
+		5CEA75192B1B8DFA00065E1C /* XmppModulesManager+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEA75182B1B8DFA00065E1C /* XmppModulesManager+.swift */; };
+		5CEA751B2B1B995700065E1C /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEA751A2B1B995700065E1C /* Preferences.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		5C790B9B2B1904F500969F6A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5C790B9D2B1904F500969F6A /* Poodle.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Poodle.entitlements; sourceTree = "<group>"; };
 		5C790BAA2B19074400969F6A /* Martin */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Martin; path = Libraries/Martin; sourceTree = "<group>"; };
+		5CDB08082B1B43F900B2B2A0 /* XMPPService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMPPService.swift; sourceTree = "<group>"; };
+		5CEA75152B1B8D3300065E1C /* Logger+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Logger+.swift"; sourceTree = "<group>"; };
+		5CEA75182B1B8DFA00065E1C /* XmppModulesManager+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XmppModulesManager+.swift"; sourceTree = "<group>"; };
+		5CEA751A2B1B995700065E1C /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,12 +66,15 @@
 		5C790B912B1904F500969F6A /* Poodle */ = {
 			isa = PBXGroup;
 			children = (
+				5CEA751C2B1B999000065E1C /* Environment */,
+				5CEA75172B1B8DEC00065E1C /* Extensions */,
 				5C790B922B1904F500969F6A /* PoodleApp.swift */,
 				5C790B942B1904F500969F6A /* ContentView.swift */,
 				5C790B962B1904F500969F6A /* Item.swift */,
 				5C790B982B1904F500969F6A /* Assets.xcassets */,
 				5C790B9D2B1904F500969F6A /* Poodle.entitlements */,
 				5C790B9A2B1904F500969F6A /* Preview Content */,
+				5CDB08082B1B43F900B2B2A0 /* XMPPService.swift */,
 			);
 			path = Poodle;
 			sourceTree = "<group>";
@@ -82,6 +93,23 @@
 				5C790BAA2B19074400969F6A /* Martin */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5CEA75172B1B8DEC00065E1C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5CEA75152B1B8D3300065E1C /* Logger+.swift */,
+				5CEA75182B1B8DFA00065E1C /* XmppModulesManager+.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5CEA751C2B1B999000065E1C /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				5CEA751A2B1B995700065E1C /* Preferences.swift */,
+			);
+			path = Environment;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,7 +185,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CDB08092B1B43F900B2B2A0 /* XMPPService.swift in Sources */,
+				5CEA751B2B1B995700065E1C /* Preferences.swift in Sources */,
 				5C790B952B1904F500969F6A /* ContentView.swift in Sources */,
+				5CEA75192B1B8DFA00065E1C /* XmppModulesManager+.swift in Sources */,
+				5CEA75162B1B8D3300065E1C /* Logger+.swift in Sources */,
 				5C790B972B1904F500969F6A /* Item.swift in Sources */,
 				5C790B932B1904F500969F6A /* PoodleApp.swift in Sources */,
 			);

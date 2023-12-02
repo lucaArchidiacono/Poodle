@@ -7,7 +7,6 @@
 
 import SwiftUI
 import SwiftData
-import Martin
 
 @main
 struct PoodleApp: App {
@@ -30,31 +29,4 @@ struct PoodleApp: App {
         }
         .modelContainer(sharedModelContainer)
     }
-}
-
-actor XMPPClientManager {
-	private var client = XMPPClient()
-	private let authModule = AuthModule()
-	private let streamFeaturesModule = StreamFeaturesModule()
-	private let resourceBinderModule = ResourceBinderModule()
-	private let sessionEstabilshmentModule = SessionEstablishmentModule()
-	private let messageModule = MessageModule(chatManager: <#T##ChatManager#>)
-
-	init() {
-		client.modulesManager
-			.register(streamFeaturesModule)
-			.register(authModule)
-			.register(resourceBinderModule)
-			.register(sessionEstabilshmentModule)
-	}
-
-
-}
-
-extension XmppModulesManager {
-	@discardableResult
-	func register(_ module: XmppModule) -> XmppModulesManager {
-		let _: XmppModule = self.register(module)
-		return self
-	}
 }
