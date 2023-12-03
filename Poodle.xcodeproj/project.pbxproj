@@ -13,6 +13,8 @@
 		5C790B992B1904F500969F6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C790B982B1904F500969F6A /* Assets.xcassets */; };
 		5C790B9C2B1904F500969F6A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C790B9B2B1904F500969F6A /* Preview Assets.xcassets */; };
 		5C790BAE2B19BCCD00969F6A /* Martin in Frameworks */ = {isa = PBXBuildFile; productRef = 5C790BAD2B19BCCD00969F6A /* Martin */; };
+		5C946CE52B1D30A200AC838D /* Keychain in Resources */ = {isa = PBXBuildFile; fileRef = 5C946CE42B1D30A200AC838D /* Keychain */; };
+		5C946CE72B1D30AC00AC838D /* Keychain in Frameworks */ = {isa = PBXBuildFile; productRef = 5C946CE62B1D30AC00AC838D /* Keychain */; };
 		5CBD69B72B1D2CB600BE5DFD /* AccountService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBD69B52B1D2CB600BE5DFD /* AccountService.swift */; };
 		5CBD69B82B1D2CB600BE5DFD /* XMPPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBD69B62B1D2CB600BE5DFD /* XMPPService.swift */; };
 		5CEA75162B1B8D3300065E1C /* Logger+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEA75152B1B8D3300065E1C /* Logger+.swift */; };
@@ -29,6 +31,7 @@
 		5C790B9B2B1904F500969F6A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5C790B9D2B1904F500969F6A /* Poodle.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Poodle.entitlements; sourceTree = "<group>"; };
 		5C790BAA2B19074400969F6A /* Martin */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Martin; path = Libraries/Martin; sourceTree = "<group>"; };
+		5C946CE42B1D30A200AC838D /* Keychain */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Keychain; sourceTree = "<group>"; };
 		5CBD69B52B1D2CB600BE5DFD /* AccountService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountService.swift; sourceTree = "<group>"; };
 		5CBD69B62B1D2CB600BE5DFD /* XMPPService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMPPService.swift; sourceTree = "<group>"; };
 		5CEA75152B1B8D3300065E1C /* Logger+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Logger+.swift"; sourceTree = "<group>"; };
@@ -41,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C946CE72B1D30AC00AC838D /* Keychain in Frameworks */,
 				5C790BAE2B19BCCD00969F6A /* Martin in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -52,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				5C790B912B1904F500969F6A /* Poodle */,
+				5C946CE32B1D30A200AC838D /* Packages */,
 				5C790B902B1904F500969F6A /* Products */,
 				5C790BA92B19074400969F6A /* Frameworks */,
 			);
@@ -95,6 +100,14 @@
 				5C790BAA2B19074400969F6A /* Martin */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5C946CE32B1D30A200AC838D /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				5C946CE42B1D30A200AC838D /* Keychain */,
+			);
+			path = Packages;
 			sourceTree = "<group>";
 		};
 		5CBD69B42B1D2CB600BE5DFD /* Services */ = {
@@ -141,6 +154,7 @@
 			name = Poodle;
 			packageProductDependencies = (
 				5C790BAD2B19BCCD00969F6A /* Martin */,
+				5C946CE62B1D30AC00AC838D /* Keychain */,
 			);
 			productName = Poodle;
 			productReference = 5C790B8F2B1904F500969F6A /* Poodle.app */;
@@ -185,6 +199,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C790B9C2B1904F500969F6A /* Preview Assets.xcassets in Resources */,
+				5C946CE52B1D30A200AC838D /* Keychain in Resources */,
 				5C790B992B1904F500969F6A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,6 +426,10 @@
 		5C790BAD2B19BCCD00969F6A /* Martin */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Martin;
+		};
+		5C946CE62B1D30AC00AC838D /* Keychain */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Keychain;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
