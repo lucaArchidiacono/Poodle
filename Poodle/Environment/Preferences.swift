@@ -10,10 +10,8 @@ import SwiftUI
 
 @MainActor
 final class Preferences: ObservableObject {
-    static let sharedDefault = UserDefaults(suiteName: "lucaa.ch.Poodle")
+    static let sharedDefault = UserDefaults(suiteName: "ch.lucaa.Poodle")
     static let shared = Preferences()
-    
-    @AppStorage("account") public var hapticTabSelectionEnabled = true
     
     private init() {}
 }

@@ -33,8 +33,6 @@ class XMPPService: ObservableObject {
             .register(resourceBinderModule)
             .register(sessionEstabilshmentModule)
             .register(messageModule)
-        
-        
     }
     
     private func observe() {
